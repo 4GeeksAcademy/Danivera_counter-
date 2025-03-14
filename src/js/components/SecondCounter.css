@@ -1,0 +1,17 @@
+.boxSecundero{
+  
+    color:aliceblue;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 4rem;
+    text-align: center;
+    background-color: black;
+    width:fit-content;
+   
+}
+.secundero{
+    font-size: 6rem;
+    filter:drop-shadow(0 0 10px white);
+
+}
