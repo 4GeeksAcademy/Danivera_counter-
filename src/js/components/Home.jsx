@@ -3,16 +3,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // Include bootstrap npm library into the bundle
 import 'bootstrap';
-import './icons.js';
-import SimpleCounter from "./component/simpleCounter.jsx"
+
 
 // Include your index.scss file into the bundle
-import '../styles/index.scss';
+import './src/index.css';
+import SecondCounter from '../components/SecondCounter.jsx';
 
 
 let counter = 0;
-const root = ReactDOM.createRoot(document.getElementById('app'));
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
     const four = Math.floor(counter / 1000);
     const three = Math.floor(counter / 100);
@@ -21,6 +20,6 @@ setInterval(() => {
     counter++;
     
     root.render(
-        <SimpleCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} />
+        <SecondCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} />
     );
 }, 1000);
